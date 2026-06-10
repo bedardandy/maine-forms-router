@@ -1,0 +1,72 @@
+{
+  "_comment": "Cross-repo workflow bundles: the multi-repo matters one library alone cannot cover. Every (repo, form_id) pair must exist in catalog/merged_catalog.json (enforced by tests/test_workflows.py). Steps marked 'inferred': true are this project's own inference about membership/role, not something the owning repo's catalog or docs state; verify before relying on them. 'optional': true marks forms only some variants of the matter need. Where a matter has mutually exclusive openers (e.g. testate vs intestate, LLC vs corporation), 'alternative_group' names the choice set — pick one.",
+  "workflows": {
+    "re_purchase_closing": {
+      "name": "Real-estate purchase / closing",
+      "description": "Maine real-estate transfer: the transfer tax declaration filed with the deed, plus the probate/court companion forms some closings need (estate-owned property, divorce-ordered conveyance). Deed instruments themselves are not court forms and are out of scope of all four libraries.",
+      "keywords": ["deed", "closing", "purchase", "sale", "sell", "buy", "transfer", "conveyance", "buyer", "seller", "property", "land", "house", "real", "estate", "rettd", "registry"],
+      "sources": ["transactional-tax-forms catalog/by_domain.json (real-estate domain + companion_repo pointers)"],
+      "steps": [
+        {"repo": "transactional-tax-forms", "form_id": "ME-RETTD", "role": "Real Estate Transfer Tax Declaration filed with the deed at the registry", "inferred": false},
+        {"repo": "transactional-tax-forms", "form_id": "MRS-700SOV", "role": "estate tax lien discharge (Statement of Value) when the seller is a decedent's estate", "optional": true, "inferred": true},
+        {"repo": "maine-probate-forms", "form_id": "DE-401", "role": "Certificate of Value when the seller is a decedent's estate", "optional": true, "inferred": true},
+        {"repo": "maine-court-forms", "form_id": "FM-056", "role": "Real Estate Certificate when the conveyance implements a divorce judgment", "optional": true, "inferred": true},
+        {"repo": "maine-court-forms", "form_id": "FM-205", "role": "Real Estate Order when the conveyance implements a divorce judgment", "optional": true, "inferred": true}
+      ]
+    },
+    "probate_estate_administration": {
+      "name": "Probate estate administration",
+      "description": "Open, administer, and close a Maine decedent's estate: probate court filings plus the fiduciary/estate tax returns the estate owes (federal and Maine).",
+      "keywords": ["open", "estate", "probate", "decedent", "died", "death", "deceased", "personal", "representative", "executor", "administration", "administer", "inherit", "heir", "intestate", "testate", "fiduciary"],
+      "sources": ["transactional-tax-forms catalog/by_domain.json (probate domain + companion_repo pointer to maine-probate-forms)", "maine-probate-forms catalog/router_catalog.json (estates category titles)"],
+      "steps": [
+        {"repo": "maine-probate-forms", "form_id": "DE-101", "role": "Application for Informal Probate / Appointment — Intestate (no will)", "alternative_group": "opening_application", "inferred": false},
+        {"repo": "maine-probate-forms", "form_id": "DE-201", "role": "Application for Informal Probate of Will or Appointment (testate)", "alternative_group": "opening_application", "inferred": false},
+        {"repo": "maine-probate-forms", "form_id": "AF-102", "role": "Small Estate Affidavit — collection of personal property without full administration", "optional": true, "inferred": true},
+        {"repo": "maine-probate-forms", "form_id": "DE-104", "role": "Personal Representative acceptance", "inferred": true},
+        {"repo": "maine-probate-forms", "form_id": "DE-403", "role": "bond for the Personal Representative, when required", "optional": true, "inferred": true},
+        {"repo": "maine-probate-forms", "form_id": "DE-405", "role": "estate inventory", "inferred": true},
+        {"repo": "transactional-tax-forms", "form_id": "IRS-56", "role": "Notice Concerning Fiduciary Relationship to the IRS", "inferred": false},
+        {"repo": "transactional-tax-forms", "form_id": "IRS-706", "role": "federal estate (and GST) tax return, when the estate is large enough to owe one", "optional": true, "inferred": false},
+        {"repo": "transactional-tax-forms", "form_id": "MRS-706ME", "role": "Maine estate tax return", "optional": true, "inferred": false},
+        {"repo": "transactional-tax-forms", "form_id": "IRS-1041", "role": "federal fiduciary income tax return for the estate", "inferred": false},
+        {"repo": "transactional-tax-forms", "form_id": "MRS-1041ME", "role": "Maine fiduciary income tax return", "inferred": false},
+        {"repo": "transactional-tax-forms", "form_id": "MRS-700SOV", "role": "estate tax lien discharge when the estate conveys Maine real property", "optional": true, "inferred": true},
+        {"repo": "maine-probate-forms", "form_id": "DE-406", "role": "probate account", "inferred": true},
+        {"repo": "maine-probate-forms", "form_id": "DE-602", "role": "sworn statement to close the estate (informal)", "inferred": true},
+        {"repo": "maine-probate-forms", "form_id": "DE-603", "role": "closing statement for a small estate", "optional": true, "inferred": true}
+      ]
+    },
+    "corp_formation": {
+      "name": "Business entity formation",
+      "description": "Form a new Maine business entity (LLC, business corporation, or nonprofit) with the Secretary of State, then the federal/Maine tax registrations and elections a new entity makes.",
+      "keywords": ["form", "incorporate", "incorporation", "formation", "start", "starting", "new", "llc", "corporation", "nonprofit", "company", "entity", "business", "startup", "organize", "ein", "register"],
+      "sources": ["transactional-tax-forms catalog/by_domain.json (corporations domain + companion_repo pointer to maine-corporation-forms)", "maine-corporation-forms catalog/forms_index.json (formation titles per entity type)"],
+      "steps": [
+        {"repo": "maine-corporation-forms", "form_id": "LLC_MLLC-6", "role": "Certificate of Formation — Maine LLC", "alternative_group": "formation_filing", "inferred": false},
+        {"repo": "maine-corporation-forms", "form_id": "CORP_MBCA-6", "role": "Articles of Incorporation — Maine business corporation", "alternative_group": "formation_filing", "inferred": false},
+        {"repo": "maine-corporation-forms", "form_id": "NP_MNPCA-6", "role": "Articles of Incorporation — Maine nonprofit corporation", "alternative_group": "formation_filing", "inferred": false},
+        {"repo": "transactional-tax-forms", "form_id": "IRS-SS-4", "role": "apply for the new entity's EIN", "inferred": false},
+        {"repo": "transactional-tax-forms", "form_id": "IRS-8832", "role": "entity classification election, if electing out of the default classification", "optional": true, "inferred": false},
+        {"repo": "transactional-tax-forms", "form_id": "IRS-2553", "role": "S corporation election, if electing S status", "optional": true, "inferred": false},
+        {"repo": "transactional-tax-forms", "form_id": "MRS-941ME", "role": "Maine employer withholding return, once the entity has employees", "optional": true, "inferred": true},
+        {"repo": "transactional-tax-forms", "form_id": "MRS-W4ME", "role": "Maine withholding allowance certificate collected from each employee", "optional": true, "inferred": true}
+      ]
+    },
+    "corp_dissolution": {
+      "name": "Business entity dissolution",
+      "description": "Wind down and dissolve a Maine business entity with the Secretary of State, plus the final Maine tax returns the dissolving entity files.",
+      "keywords": ["dissolve", "dissolution", "wind", "down", "close", "closing", "shut", "cancel", "cancellation", "terminate", "llc", "corporation", "company", "entity", "business"],
+      "sources": ["maine-corporation-forms catalog/forms_index.json (dissolution/cancellation titles per entity type)"],
+      "steps": [
+        {"repo": "maine-corporation-forms", "form_id": "CORP_MBCA-11", "role": "Articles of Dissolution — Maine business corporation", "alternative_group": "dissolution_filing", "inferred": false},
+        {"repo": "maine-corporation-forms", "form_id": "CORP_MBCA-11I", "role": "Articles of Dissolution by incorporators or initial directors (never-commenced corporation)", "alternative_group": "dissolution_filing", "optional": true, "inferred": false},
+        {"repo": "maine-corporation-forms", "form_id": "LLC_MLLC-11C", "role": "Certificate of Cancellation — domestic Maine LLC", "alternative_group": "dissolution_filing", "inferred": false},
+        {"repo": "maine-corporation-forms", "form_id": "NP_MNPCA-11", "role": "Statement of Intent to Dissolve — domestic nonprofit (first step of the nonprofit two-step)", "alternative_group": "dissolution_filing", "inferred": false},
+        {"repo": "maine-corporation-forms", "form_id": "NP_MNPCA-11D", "role": "Articles of Dissolution — domestic nonprofit, after the statement of intent", "optional": true, "inferred": false},
+        {"repo": "transactional-tax-forms", "form_id": "MRS-1120ME", "role": "final Maine corporate income tax return for a dissolving corporation", "optional": true, "inferred": true},
+        {"repo": "transactional-tax-forms", "form_id": "MRS-941ME", "role": "final Maine employer withholding return, if the entity had employees", "optional": true, "inferred": true}
+      ]
+    }
+  }
+}
