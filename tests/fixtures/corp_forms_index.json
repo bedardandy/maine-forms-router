@@ -1,0 +1,59 @@
+{
+ "forms": [
+  {
+   "form_id": "CORP_ASUM-5",
+   "code": "ASUM-5",
+   "title": "Statement of Intention to Do Business Under an Assumed Name",
+   "entity_type": "Business Corporation",
+   "statute": "Maine Business Corporation Act (13-C M.R.S.)",
+   "num_pages": 2,
+   "num_fields": 24,
+   "mapped_fields": 21,
+   "path": "forms/CORP_ASUM-5"
+  },
+  {
+   "form_id": "CORP_MBCA-11",
+   "code": "MBCA-11",
+   "title": "Articles of Dissolution",
+   "entity_type": "Business Corporation",
+   "statute": "Maine Business Corporation Act (13-C M.R.S.)",
+   "num_pages": 2,
+   "num_fields": 21,
+   "mapped_fields": 19,
+   "path": "forms/CORP_MBCA-11"
+  },
+  {
+   "form_id": "CORP_MBCA-6",
+   "code": "MBCA-6",
+   "title": "Articles of Incorporation",
+   "entity_type": "Business Corporation",
+   "statute": "Maine Business Corporation Act (13-C M.R.S.)",
+   "num_pages": 3,
+   "num_fields": 40,
+   "mapped_fields": 37,
+   "path": "forms/CORP_MBCA-6"
+  },
+  {
+   "form_id": "LLC_MLLC-11C",
+   "code": "MLLC-11C",
+   "title": "Certificate of Cancellation (Domestic LLC)",
+   "entity_type": "Limited Liability Company",
+   "statute": "Maine Limited Liability Company Act (31 M.R.S. ch. 21)",
+   "num_pages": 2,
+   "num_fields": 23,
+   "mapped_fields": 19,
+   "path": "forms/LLC_MLLC-11C"
+  },
+  {
+   "form_id": "LLC_MLLC-6",
+   "code": "MLLC-6",
+   "title": "Certificate of Formation (LLC)",
+   "entity_type": "Limited Liability Company",
+   "statute": "Maine Limited Liability Company Act (31 M.R.S. ch. 21)",
+   "num_pages": 3,
+   "num_fields": 32,
+   "mapped_fields": 26,
+   "path": "forms/LLC_MLLC-6"
+  }
+ ]
+}

@@ -1,0 +1,117 @@
+{
+ "count": 14,
+ "forms": [
+  {
+   "form_id": "IRS-1041",
+   "title": "U.S. Income Tax Return for Estates and Trusts",
+   "agency": "IRS",
+   "domain": "probate",
+   "num_pages": 3,
+   "status": "opus-adjudicated"
+  },
+  {
+   "form_id": "IRS-2553",
+   "title": "Election by a Small Business Corporation (S corporation)",
+   "agency": "IRS",
+   "domain": "corporations",
+   "num_pages": 4,
+   "status": "opus-adjudicated"
+  },
+  {
+   "form_id": "IRS-56",
+   "title": "Notice Concerning Fiduciary Relationship",
+   "agency": "IRS",
+   "domain": "probate",
+   "num_pages": 2,
+   "status": "opus-adjudicated"
+  },
+  {
+   "form_id": "IRS-706",
+   "title": "United States Estate (and GST) Tax Return",
+   "agency": "IRS",
+   "domain": "probate",
+   "num_pages": 5,
+   "status": "opus-adjudicated"
+  },
+  {
+   "form_id": "IRS-8832",
+   "title": "Entity Classification Election",
+   "agency": "IRS",
+   "domain": "corporations",
+   "num_pages": 8,
+   "status": "opus-adjudicated"
+  },
+  {
+   "form_id": "IRS-SS-4",
+   "title": "Application for Employer Identification Number (EIN)",
+   "agency": "IRS",
+   "domain": "corporations",
+   "num_pages": 2,
+   "status": "opus-adjudicated"
+  },
+  {
+   "form_id": "ME-RETTD",
+   "title": "Maine Real Estate Transfer Tax Declaration",
+   "agency": "Maine Revenue Services",
+   "domain": "real-estate",
+   "num_pages": 4,
+   "status": "opus-adjudicated"
+  },
+  {
+   "form_id": "MRS-1041ME",
+   "title": "Maine Fiduciary Income Tax Return",
+   "agency": "Maine Revenue Services",
+   "domain": "probate",
+   "num_pages": 3,
+   "status": "remap-pending"
+  },
+  {
+   "form_id": "MRS-1120ME",
+   "title": "Maine Corporate Income Tax Return",
+   "agency": "Maine Revenue Services",
+   "domain": "corporations",
+   "num_pages": 3,
+   "status": "mapped"
+  },
+  {
+   "form_id": "MRS-700SOV",
+   "title": "Maine Estate Tax Statement of Value (Lien Discharge)",
+   "agency": "Maine Revenue Services",
+   "domain": "probate",
+   "num_pages": 2,
+   "status": "remap-pending"
+  },
+  {
+   "form_id": "MRS-706ME",
+   "title": "Maine Estate Tax Return",
+   "agency": "Maine Revenue Services",
+   "domain": "probate",
+   "num_pages": 3,
+   "status": "mapped"
+  },
+  {
+   "form_id": "MRS-900ME",
+   "title": "Payment Voucher for Maine Income Tax Withheld",
+   "agency": "Maine Revenue Services",
+   "domain": "corporations",
+   "num_pages": 1,
+   "status": "mapped"
+  },
+  {
+   "form_id": "MRS-941ME",
+   "title": "Maine Employer Income Tax Withholding Return (Quarterly)",
+   "agency": "Maine Revenue Services",
+   "domain": "corporations",
+   "num_pages": 3,
+   "status": "mapped"
+  },
+  {
+   "form_id": "MRS-W4ME",
+   "title": "Employee's Maine Withholding Allowance Certificate",
+   "agency": "Maine Revenue Services",
+   "domain": "corporations",
+   "num_pages": 3,
+   "status": "mapped"
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "_generated_by": "tools/build_router_catalog.py",
+ "n_forms": 6,
+ "form_ids": [
+  "AD-007",
+  "AF-102",
+  "AF-103",
+  "DE-101",
+  "DE-201",
+  "DE-401"
+ ],
+ "cat_title": "AD-007 | adoption | Confidential Statement\nAF-102 | affidavits | Small Estate Affidavit for Collection of Personal Property\nAF-103 | affidavits | Affidavit of Name Change for Adult\nDE-101 | estates | Application for Informal Probate / Appointment - Intestate\nDE-201 | estates | Application for Informal Probate of Will or Appointment\nDE-401 | estates | Certificate of Value Resident and Non Resident",
+ "cat_surgical": "AD-007 | adoption | Confidential Statement\nAF-102 | affidavits | Small Estate Affidavit for Collection of Personal Property\nAF-103 | affidavits | Affidavit of Name Change for Adult — sworn AFFIDAVIT documenting an already-changed adult name (e.g. via marriage); not a petition\nDE-101 | estates | Application for Informal Probate / Appointment - Intestate\nDE-201 | estates | Application for Informal Probate of Will or Appointment\nDE-401 | estates | Certificate of Value Resident and Non Resident",
+ "disambiguated": [
+  "AF-103"
+ ]
+}

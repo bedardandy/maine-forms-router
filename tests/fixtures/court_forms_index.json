@@ -1,0 +1,54 @@
+[
+ {
+  "form": "AD-001",
+  "title": "AD-001 — Petition for Adoption and Change of Name",
+  "pages": "5",
+  "fields": "104",
+  "category": "Adoption",
+  "court": "Probate Court / District Court",
+  "purpose": "Form used in adoption proceedings in Maine court.",
+  "governing_law": "- **17-A M.R.S. § 553** - **18-C M.R.S. § 9** - **18-C M.R.S. §§ 9** - **22 M.R.S. § 2706-A** - **22 M.R.S. §§ 3941**"
+ },
+ {
+  "form": "CV-007",
+  "title": "CV-007 — Complaint for Residential Forcible Entry",
+  "pages": "2",
+  "fields": "68",
+  "category": "Civil — Eviction",
+  "companions": "CV-034 (Summons, $5 from clerk), CV-100 (Instructions), CV-256 (Info Sheet & Mediation Request), CV-204 (Affidavit of Service)",
+  "purpose": "This is the complaint form to begin a residential eviction (Forcible Entry and Detainer) case in Maine District Court. Filed by a landlord (plaintiff) against tenant(s) (defendant) to recover possession of residential property.",
+  "governing_law": "- **M.R. Civ. P. 80D** — Forcible Entry and Detainer procedure - **14 M.R.S. §§ 6001–6016** — FED statutes (notice requirements, grounds, procedure) - § 6001: Availability of remedy - § 6002: Grounds for FED action - § 6001-A: Notice to quit requirements - § 6002-A: Additional protections for residential tenants - § 6003: Procedure and service - § 6005: Judgment and writ of possession - § 6014: Rent escrow",
+  "keywords": "eviction evict landlord tenant"
+ },
+ {
+  "form": "FM-056",
+  "title": "FM-056 — Real Estate Certificate",
+  "pages": "1",
+  "fields": "36",
+  "category": "Family",
+  "companions": "FM-004, FM-043",
+  "purpose": "Certificate of real estate ownership required when either party has interest in real property.",
+  "governing_law": ""
+ },
+ {
+  "form": "CR-CV-FM-JV-PA-PC-286",
+  "title": "CR-CV-FM-JV-PA-PC-286 — Motion to Continue",
+  "fields": "54",
+  "category": "Cross-Category — Procedural",
+  "court": "Superior Court / District Court / Unified Criminal Docket",
+  "purpose": "Requests postponement (continuance) of a scheduled court event to a later date.",
+  "keywords": "postpone reschedule continue continuance adjourn delay move hearing trial date court date later date",
+  "governing_law": "- **M.R. Civ. P. 40 (assignment of cases)** - **M.R.U. Crim. P. 25A (continuances)**"
+ },
+ {
+  "form": "BCCP-2010",
+  "title": "BCCP-2010 — Response to Complaint",
+  "pages": "1",
+  "fields": "14",
+  "category": "Business_Consumer",
+  "court": "Various",
+  "purpose": "do not file a written Response within 20 days.  You can use this form as your Response.  Just",
+  "governing_law": "- **Various** — Primary statutory authority",
+  "negative_keywords": "eviction evict forcible detainer"
+ }
+]

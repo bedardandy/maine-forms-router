@@ -1,0 +1,44 @@
+{
+ "forms": [
+  {
+   "form_id": "CORP_ASUM-5",
+   "title": "Statement of Intention to Do Business Under an Assumed Name",
+   "hints": [
+    "Business Corporation",
+    "form ASUM-5"
+   ]
+  },
+  {
+   "form_id": "CORP_MBCA-11",
+   "title": "Articles of Dissolution",
+   "hints": [
+    "Business Corporation",
+    "form MBCA-11"
+   ]
+  },
+  {
+   "form_id": "CORP_MBCA-6",
+   "title": "Articles of Incorporation",
+   "hints": [
+    "Business Corporation",
+    "form MBCA-6"
+   ]
+  },
+  {
+   "form_id": "LLC_MLLC-11C",
+   "title": "Certificate of Cancellation (Domestic LLC)",
+   "hints": [
+    "Limited Liability Company",
+    "form MLLC-11C"
+   ]
+  },
+  {
+   "form_id": "LLC_MLLC-6",
+   "title": "Certificate of Formation (LLC)",
+   "hints": [
+    "Limited Liability Company",
+    "form MLLC-6"
+   ]
+  }
+ ]
+}

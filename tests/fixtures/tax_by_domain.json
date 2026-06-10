@@ -1,0 +1,113 @@
+{
+ "by_domain": {
+  "corporations": {
+   "form_ids": [
+    "IRS-2553",
+    "IRS-8832",
+    "IRS-SS-4",
+    "MRS-1120ME",
+    "MRS-900ME",
+    "MRS-941ME",
+    "MRS-W4ME"
+   ],
+   "forms": [
+    {
+     "form_id": "IRS-2553",
+     "title": "Election by a Small Business Corporation (S corporation)"
+    },
+    {
+     "form_id": "IRS-8832",
+     "title": "Entity Classification Election"
+    },
+    {
+     "form_id": "IRS-SS-4",
+     "title": "Application for Employer Identification Number (EIN)"
+    },
+    {
+     "form_id": "MRS-1120ME",
+     "title": "Maine Corporate Income Tax Return"
+    },
+    {
+     "form_id": "MRS-900ME",
+     "title": "Payment Voucher for Maine Income Tax Withheld"
+    },
+    {
+     "form_id": "MRS-941ME",
+     "title": "Maine Employer Income Tax Withholding Return (Quarterly)"
+    },
+    {
+     "form_id": "MRS-W4ME",
+     "title": "Employee's Maine Withholding Allowance Certificate"
+    }
+   ],
+   "companion_repo": {
+    "repo": "github.com/bedardandy/maine-corporation-forms",
+    "for": "the Maine SoS entity filings (formation, amendment, annual report) the tax forms ride along with"
+   }
+  },
+  "real-estate": {
+   "form_ids": [
+    "ME-RETTD"
+   ],
+   "forms": [
+    {
+     "form_id": "ME-RETTD",
+     "title": "Maine Real Estate Transfer Tax Declaration"
+    }
+   ],
+   "companion_repo": {
+    "repo": "github.com/bedardandy/maine-court-forms",
+    "for": "deed and court forms a Maine real-estate closing may also need"
+   }
+  },
+  "probate": {
+   "form_ids": [
+    "IRS-1041",
+    "IRS-56",
+    "IRS-706",
+    "MRS-1041ME",
+    "MRS-700SOV",
+    "MRS-706ME"
+   ],
+   "forms": [
+    {
+     "form_id": "IRS-1041",
+     "title": "U.S. Income Tax Return for Estates and Trusts"
+    },
+    {
+     "form_id": "IRS-56",
+     "title": "Notice Concerning Fiduciary Relationship"
+    },
+    {
+     "form_id": "IRS-706",
+     "title": "United States Estate (and GST) Tax Return"
+    },
+    {
+     "form_id": "MRS-1041ME",
+     "title": "Maine Fiduciary Income Tax Return"
+    },
+    {
+     "form_id": "MRS-700SOV",
+     "title": "Maine Estate Tax Statement of Value (Lien Discharge)"
+    },
+    {
+     "form_id": "MRS-706ME",
+     "title": "Maine Estate Tax Return"
+    }
+   ],
+   "companion_repo": {
+    "repo": "github.com/bedardandy/maine-probate-forms",
+    "for": "the Maine probate court filings (the estate's court side)"
+   }
+  }
+ },
+ "cross_listed": {
+  "IRS-SS-4": [
+   "corporations",
+   "probate"
+  ],
+  "IRS-706": [
+   "probate"
+  ]
+ }
+}
