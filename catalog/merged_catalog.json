@@ -17,7 +17,7 @@
     "catalog/forms_index.json"
    ],
    "n_forms": 342,
-   "commit": "189c8c168f026dfd76616ce1c9178343aaff47dd",
+   "commit": "c5f7b0da6e1ccc422907c2ab9dd3b8d9b72192b1",
    "fetched": "local"
   },
   "maine-probate-forms": {
@@ -37,7 +37,7 @@
     "catalog/by_domain.json"
    ],
    "n_forms": 14,
-   "commit": "9524439e46fd816d1a929a39def6765ca65628af",
+   "commit": "d15638e7f4bb39447cdfd6915bd164d364e22ae1",
    "fetched": "local"
   }
  },
@@ -6018,7 +6018,7 @@
    "form_id": "MRS-1041ME",
    "title": "Maine Fiduciary Income Tax Return",
    "domain": "probate",
-   "status": "remap-pending",
+   "status": "mapped",
    "keywords": [
     "Maine Revenue Services"
    ],
@@ -6040,7 +6040,7 @@
    "form_id": "MRS-700SOV",
    "title": "Maine Estate Tax Statement of Value (Lien Discharge)",
    "domain": "probate",
-   "status": "remap-pending",
+   "status": "mapped",
    "keywords": [
     "Maine Revenue Services"
    ],
