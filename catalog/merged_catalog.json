@@ -8,7 +8,7 @@
     "catalog/router_catalog.json"
    ],
    "n_forms": 156,
-   "commit": "f86e594b3977702a8af7531164a218139a2099fb",
+   "commit": "9055082d75833545a0fb6bed6a83f632d234fde0",
    "fetched": "local"
   },
   "maine-court-forms": {
@@ -17,7 +17,7 @@
     "catalog/forms_index.json"
    ],
    "n_forms": 342,
-   "commit": "d420356db66243a79380be05a06c47a372574064",
+   "commit": "9cc647089e7aed8c9676192da427cdbc0463edc5",
    "fetched": "local"
   },
   "maine-probate-forms": {
@@ -27,7 +27,7 @@
     "catalog/fill_geometry_status.json"
    ],
    "n_forms": 79,
-   "commit": "1687e0a4468d60ff46f016f3147fc749d9b1b0d4",
+   "commit": "619a412005102c83781df69b53baac3aff18ca0a",
    "fetched": "local"
   },
   "transactional-tax-forms": {
@@ -37,7 +37,7 @@
     "catalog/by_domain.json"
    ],
    "n_forms": 14,
-   "commit": "1a198e12b0e0a1d7cdda9dc202ed47312c8e0949",
+   "commit": "fbb7f3828b594e926ac3b48ec14c09f4e2200775",
    "fetched": "local"
   }
  },
